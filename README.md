@@ -1,1 +1,2 @@
-# vaultwardenfc23
+# Vaultwarden for home use
+Before we start all credit to the creation of this software goes [here](https://github.com/dani-garcia/vaultwarden), I did not create the software at all I simply want to provide a guide on how to install and configure the software for Home use, so others can use it, and so I can have documentation for myself. The link provides the official documentation, but I like creating my own.
