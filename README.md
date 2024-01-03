@@ -10,6 +10,20 @@ Vaultwarden is Bitwarden written in Rust, it has all the paid features for FREE,
   <li>A domain which will cost money (if you dont care about the name it will be about $1/yr)</li>
   <li>I am deploying using Cloudflare tunnels so an account with them will be needed(you can also get the domain from them)</li>
   <li>And finally Patience, things will not work the first time.</li>
-
 </ol>
+
+# Docker
+Before we start on your container/VM/Server, we need to get docker installed. I am using an Ubuntu 23.04 image and will be using the commands for that OS, you can find the [Official Docs Here](https://docs.docker.com/engine/install/ubuntu/) for installing Docker.
+
+# Installation
+Once Docker is installed we will begin installing Vaultwarden, the following command will pull the image from Docker.
+```bash
+docker pull vaultwarden/server:latest
+```
+After we have pulled the image we now need to create a container using the image which is done with the following(after the --name argument you can put whatever container name you would like there) this command runs Docker as a daemon, and the container will come back up automtically in case of a restart:
+```bash
+docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p 80:80 vaultwarden/server:latest
+```
+We can then use the <b>docker ps</b> command to make sure our container is running, it should look like the following
+
 
