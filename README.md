@@ -27,6 +27,11 @@ docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p
 We can then use the <b>docker ps</b> command to make sure our container is running, it should look like the following
 <img src="https://github.com/FrancoCarrera1/vaultwardenfc23/blob/main/image/Screenshot%202024-01-02%20223700.png" height="80%" with="80%" alt="docker ps result"/>
 
+
 Now after that is setup, you can use the <b>ip addr</b> command to see the containers IP Address, pasting it in your browser will take you to the Vaultwarden page, BUT you will not be able to create an account yet as you need to setup HTTPS, which we will be doing with CloudFlare
+
+#Configuring Cloudflare
+
+Once you have created a CloudFlare account and purchased a domain, we can get started on making the app public facing using your domain.
 
 
