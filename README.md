@@ -25,5 +25,6 @@ After we have pulled the image we now need to create a container using the image
 docker run -d --name vaultwarden -v /vw-data/:/data/ --restart unless-stopped -p 80:80 vaultwarden/server:latest
 ```
 We can then use the <b>docker ps</b> command to make sure our container is running, it should look like the following
+<img src="https://github.com/FrancoCarrera1/vaultwardenfc23/blob/main/image/Screenshot%202024-01-02%20223700.png" height="80%" with="80%" alt="docker ps result"/>
 
 
